@@ -1,3 +1,7 @@
 name: publishing
 markdown: kramdown
 baseurl: /publishing
+destination: _site/
+exclude:
+  - gitmodules/
+  - Makefile

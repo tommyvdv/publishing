@@ -1,3 +1,6 @@
-[submodule "flexboxgrid"]
-	path = flexboxgrid
+[submodule "gitmodules/terminal.css"]
+	path = gitmodules/terminal.css
+	url = https://github.com/Gioni06/terminal.css.git
+[submodule "gitmodules/flexboxgrid"]
+	path = gitmodules/flexboxgrid
 	url = https://github.com/kristoferjoseph/flexboxgrid.git

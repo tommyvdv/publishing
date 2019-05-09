@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>{{ page.title }}</title>
-    <!-- link to main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/gitmodules/flexboxgrid/dist/flexboxgrid.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/gitmodules/terminal.css/lib/terminal.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css">
   </head>
 
-  <body>
-    <nav>
-      <ul>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/about">About</a></li>
-        <li><a href="{{ site.baseurl }}/cv">CV</a></li>
-        <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-      </ul>
-    </nav>
-    <div class="container">
+  <body class="terminal">
 
-      {{ content }}
+    <div class="wrap container-fluid">
 
-    </div><!-- /.container -->
+      <nav>
+        <ul>
+          <li><a href="{{ site.baseurl }}/">home</a></li>
+          <li><a href="{{ site.baseurl }}/about">about</a></li>
+          <li><a href="{{ site.baseurl }}/cv">cv</a></li>
+          <li><a href="{{ site.baseurl }}/blog">blog</a></li>
+        </ul>
+      </nav>
 
-    <footer>
-      <ul>
-        <li><a href="mailto:test@test.dev">email</a></li>
-        <li><a href="#">github.com/tommyvdv</a></li>
-      </ul>
-    </footer>
+      <div>
+        {{ content }}
+      </div>
+
+      <footer>
+        <ul>
+          <li><a href="https://www.github.com/tommyvdv">github.com/tommyvdv</a></li>
+        </ul>
+      </footer>
+
+    </div>
+
+
   </body>
 </html>
